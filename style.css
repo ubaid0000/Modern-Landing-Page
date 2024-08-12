@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+}
+.back{
+    width: 100%;
+    height: 100vh;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top{
+    pointer-events: none;
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.working-area{
+    height: 100vh;
+    width: 80%;
+    max-width: 1920px;
+    /* border: 1px solid white; */
+    margin: auto;
+    position: relative;
+}
+nav{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav-left img{
+    height: 60px;
+}
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    pointer-events: all;
+}
+.hero{
+    width: 100%;
+    /* background-color: rgb(247, 247, 247); */
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    margin-top: 3vw;
+    transform: translate(0, -50%);
+}
+.hero-left{
+    width: 50%;
+    /* background-color: rgb(135, 135, 240); */
+}
+.elem{
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+
+}
+.elem :first-child{
+    top: 0;
+}
+.elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+    font-family: "kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+}
+.hero-left button{
+    margin-top: 3vw;
+    padding: .3vw 2.5vw;
+    font-family: "kajiro";
+    font-size: 2vw;
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    cursor: pointer;
+    pointer-events: all;
+}
+.hero-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    width: 17%;
+    /* background-color: rgb(58, 221, 8); */
+}
+.hero-right p{
+    text-align: right;
+    font-size: 12px;
+    font-weight: 300;
+}
+.img-div{
+    width: 100%;
+    height: 170px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.hero-right :nth-child(3){
+    margin-bottom: 70px;
+}
